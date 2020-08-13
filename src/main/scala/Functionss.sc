@@ -1,3 +1,5 @@
+import scala.io.StdIn.readLine
+
 def print2() = {
   println("One Line")
   println("Second Line")
@@ -132,3 +134,15 @@ def checkName(myName:String, friendName:String) = {
 
 checkName( myName= "Jolanta", friendName = "Liga")
 checkName( myName= "Jolanta", friendName = "Jolanta")
+
+val b = 210
+println("Enter  your number please :) ")
+val c = readLine().toInt
+
+val answer = if (b>c) "B is larger than C"
+else if (c>b)
+  "C is larger than B"
+else "B is equal to c"
+println(answer)
+
+//so if/ else gives values in Scala
